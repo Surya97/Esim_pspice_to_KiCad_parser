@@ -1,0 +1,458 @@
+EESchema Schematic File Version 2  date 
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25  0
+EELAYER END
+$Descr A4 11700 8267
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR1
+U 1 1 20599688
+P 7100 3500
+F 0 "#PWR1" H 14200 7000 30  0001 L CNN
+F 1 "EGND" H 14200 7080 30  0001 L CNN
+	1    7100 3500
+	-1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 65562786
+P 700 2700
+F 0 "#PWR2" H 1400 5400 30  0001 L CNN
+F 1 "EGND" H 1400 5480 30  0001 L CNN
+	1    700 2700
+	1    0    0    -1
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 40773850
+P 6200 1600
+F 0 "#PWR3" H 12400 3200 30  0001 L CNN
+F 1 "EGND" H 12400 3280 30  0001 L CNN
+	1    6200 1600
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R11
+U 1 1 14862349
+P 5400 500
+F 0 "R11" H 5400 500 30  0000 L CNN
+F 1 "2" H 5400 650 30  0000 L CNN
+	1    5400 500
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R12
+U 1 1 13174315
+P 4600 500
+F 0 "R12" H 4600 500 30  0000 L CNN
+F 1 "5" H 4600 650 30  0000 L CNN
+	1    4600 500
+	1    0    0    -1
+$EndComp
+$Comp
+L VAC_PSPICE V3
+U 1 1 28259026
+P 4400 800
+F 0 "V3" H 4400 800 30  0000 L CNN
+F 1 "AC" H 4400 880 30  0000 L CNN
+	1    4400 800
+	1    0    0    -1
+$EndComp
+$Comp
+L L_PSPICE L3
+U 1 1 69139691
+P 5100 700
+F 0 "L3" H 5100 700 30  0000 L CNN
+F 1 "0.795mH" H 5100 1070 30  0000 L CNN
+	1    5100 700
+	0    1    1    0
+$EndComp
+$Comp
+L R_PSPICE R13
+U 1 1 57501863
+P 6100 3100
+F 0 "R13" H 6100 3100 30  0000 L CNN
+F 1 "6" H 6100 3250 30  0000 L CNN
+	1    6100 3100
+	0    -1    -1    0
+$EndComp
+$Comp
+L R_PSPICE R14
+U 1 1 10112552
+P 5300 2400
+F 0 "R14" H 5300 2400 30  0000 L CNN
+F 1 "2" H 5300 2550 30  0000 L CNN
+	1    5300 2400
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R15
+U 1 1 38686175
+P 4500 2400
+F 0 "R15" H 4500 2400 30  0000 L CNN
+F 1 "5" H 4500 2550 30  0000 L CNN
+	1    4500 2400
+	1    0    0    -1
+$EndComp
+$Comp
+L L_PSPICE L5
+U 1 1 11314886
+P 5000 2600
+F 0 "L5" H 5000 2600 30  0000 L CNN
+F 1 "0.795mH" H 5000 2970 30  0000 L CNN
+	1    5000 2600
+	0    1    1    0
+$EndComp
+$Comp
+L L_PSPICE L6
+U 1 1 77833137
+P 5300 3500
+F 0 "L6" H 5300 3500 30  0000 L CNN
+F 1 "0.477mH" H 5300 3550 30  0000 L CNN
+	1    5300 3500
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE RZ
+U 1 1 23958181
+P 6800 2800
+F 0 "RZ" H 6800 2800 30  0000 L CNN
+F 1 "100Meg" H 6800 3350 30  0000 L CNN
+	1    6800 2800
+	0    -1    1    0
+$EndComp
+$Comp
+L IAC_PSPICE IZ
+U 1 1 60949057
+P 7100 2900
+F 0 "IZ" H 7100 2900 30  0000 L CNN
+F 1 "IAC" H 7100 2980 30  0000 L CNN
+	1    7100 2900
+	-1    0    0    -1
+$EndComp
+$Comp
+L INCLUDE_PSPICE IN1
+U 1 1 49634959
+P 600 400
+F 0 "IN1" H 600 400 30  0000 L CNN
+F 1 "INCLUDE" H 600 480 30  0000 L CNN
+	1    600 400
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R8
+U 1 1 78246185
+P 2500 2300
+F 0 "R8" H 2500 2300 30  0000 L CNN
+F 1 "6" H 2500 2450 30  0000 L CNN
+	1    2500 2300
+	0    -1    -1    0
+$EndComp
+$Comp
+L L_PSPICE L1
+U 1 1 49331068
+P 1400 1800
+F 0 "L1" H 1400 1800 30  0000 L CNN
+F 1 "0.795mH" H 1400 2170 30  0000 L CNN
+	1    1400 1800
+	0    1    1    0
+$EndComp
+$Comp
+L R_PSPICE RL
+U 1 1 36630040
+P 3100 1900
+F 0 "RL" H 3100 1900 30  0000 L CNN
+F 1 "1" H 3100 2250 30  0000 L CNN
+	1    3100 1900
+	0    1    1    0
+$EndComp
+$Comp
+L R_PSPICE R7
+U 1 1 91897547
+P 1700 1600
+F 0 "R7" H 1700 1600 30  0000 L CNN
+F 1 "2" H 1700 1750 30  0000 L CNN
+	1    1700 1600
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE R6
+U 1 1 92912144
+P 900 1600
+F 0 "R6" H 900 1600 30  0000 L CNN
+F 1 "5" H 900 1750 30  0000 L CNN
+	1    900 1600
+	1    0    0    -1
+$EndComp
+$Comp
+L VAC_PSPICE V1
+U 1 1 19054379
+P 700 1900
+F 0 "V1" H 700 1900 30  0000 L CNN
+F 1 "AC" H 700 1980 30  0000 L CNN
+	1    700 1900
+	1    0    0    -1
+$EndComp
+$Comp
+L L_PSPICE L2
+U 1 1 33412789
+P 1700 2700
+F 0 "L2" H 1700 2700 30  0000 L CNN
+F 1 "0.477mH" H 1700 2750 30  0000 L CNN
+	1    1700 2700
+	1    0    0    -1
+$EndComp
+$Comp
+L PARAM_PSPICE PM1
+U 1 1 57669399
+P 2400 700
+F 0 "PM1" H 2400 700 30  0000 L CNN
+F 1 "PARAM" H 2400 780 30  0000 L CNN
+	1    2400 700
+	1    0    0    -1
+$EndComp
+$Comp
+L R_PSPICE RA
+U 1 1 55081221
+P 6300 1300
+F 0 "RA" H 6300 1300 30  0000 L CNN
+F 1 "6" H 6300 1450 30  0000 L CNN
+	1    6300 1300
+	0    -1    -1    0
+$EndComp
+$Comp
+L L_PSPICE L4
+U 1 1 76023174
+P 5400 1600
+F 0 "L4" H 5400 1600 30  0000 L CNN
+F 1 "0.477mH" H 5400 1650 30  0000 L CNN
+	1    5400 1600
+	1    0    0    -1
+$EndComp
+$Comp
+L VAC_PSPICE VNORT
+U 1 1 41710256
+P 6900 900
+F 0 "VNORT" H 6900 900 30  0000 L CNN
+F 1 "AC" H 6900 980 30  0000 L CNN
+	1    6900 900
+	1    0    0    -1
+$EndComp
+$Comp
+L titleblk_PSPICE titleblk
+U 1 1 84771734
+P 9700 7200
+F 0 "titleblk" H 19400 14400 30  0001 L CNN
+F 1 "titleblk" H 19400 14480 30  0001 L CNN
+	1    9700 7200
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	4400 800 4400 500
+Wire Wire Line
+	4400 500 4600 500
+Wire Wire Line
+	4400 1200 4400 1600
+Wire Wire Line
+	4400 1600 5100 1600
+Wire Wire Line
+	5100 1600 5400 1600
+Wire Wire Line
+	5100 1300 5100 1600
+Wire Wire Line
+	5100 500 5100 700
+Wire Wire Line
+	5100 500 5000 500
+Wire Wire Line
+	5100 500 5400 500
+Wire Wire Line
+	4400 3500 5000 3500
+Wire Wire Line
+	5000 3500 5300 3500
+Wire Wire Line
+	5000 3200 5000 3500
+Wire Wire Line
+	4400 2400 4400 3500
+Wire Wire Line
+	4500 2400 4400 2400
+Wire Wire Line
+	5000 2400 4900 2400
+Wire Wire Line
+	5000 2400 5000 2600
+Wire Wire Line
+	5300 2400 5000 2400
+Wire Wire Line
+	6100 3500 5900 3500
+Wire Wire Line
+	6100 3100 6100 3500
+Wire Wire Line
+	6800 3200 6800 3500
+Wire Wire Line
+	6800 3500 7100 3500
+Wire Wire Line
+	7100 3300 7100 3500
+Wire Wire Line
+	6100 3500 6800 3500
+Wire Wire Line
+	1400 2400 1400 2700
+Wire Wire Line
+	1400 2700 1700 2700
+Wire Wire Line
+	700 2700 1400 2700
+Wire Wire Line
+	700 2300 700 2700
+Wire Wire Line
+	1700 1600 1400 1600
+Wire Wire Line
+	1400 1600 1300 1600
+Wire Wire Line
+	1400 1600 1400 1800
+Wire Wire Line
+	700 1600 900 1600
+Wire Wire Line
+	700 1900 700 1600
+Wire Wire Line
+	2500 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2300
+Wire Wire Line
+	2500 2700 2300 2700
+Wire Wire Line
+	2500 2300 2500 2700
+Wire Wire Line
+	2500 1600 3100 1600
+Wire Wire Line
+	3100 1600 3100 1900
+Wire Wire Line
+	2500 1600 2500 1900
+Wire Wire Line
+	2100 1600 2500 1600
+Wire Wire Line
+	5800 500 6300 500
+Wire Wire Line
+	6300 500 6300 900
+Wire Wire Line
+	6300 500 6900 500
+Wire Wire Line
+	6900 500 6900 900
+Wire Wire Line
+	6900 1300 6900 1600
+Wire Wire Line
+	6300 1300 6300 1600
+Wire Wire Line
+	6000 1600 6200 1600
+Wire Wire Line
+	6300 1600 6200 1600
+Wire Wire Line
+	6900 1600 6300 1600
+Wire Wire Line
+	6800 2400 7100 2400
+Wire Wire Line
+	6100 2400 6100 2700
+Wire Wire Line
+	5700 2400 6100 2400
+Wire Wire Line
+	6800 2400 6800 2800
+Wire Wire Line
+	7100 2400 7100 2900
+Wire Wire Line
+	6100 2400 6800 2400
+Connection ~ 5100 1600
+Connection ~ 5100 500
+Connection ~ 5400 1600
+Connection ~ 5400 500
+Connection ~ 5800 500
+Connection ~ 4600 500
+Connection ~ 5000 500
+Connection ~ 4400 800
+Connection ~ 4400 1200
+Connection ~ 5100 1300
+Connection ~ 5100 700
+Connection ~ 5300 3500
+Connection ~ 5000 3200
+Connection ~ 5000 3500
+Connection ~ 4500 2400
+Connection ~ 5900 3500
+Connection ~ 6100 3100
+Connection ~ 4900 2400
+Connection ~ 5000 2600
+Connection ~ 5300 2400
+Connection ~ 5000 2400
+Connection ~ 6100 2700
+Connection ~ 5700 2400
+Connection ~ 6800 2800
+Connection ~ 7100 2900
+Connection ~ 6100 2400
+Connection ~ 6800 2400
+Connection ~ 6800 3200
+Connection ~ 7100 3500
+Connection ~ 7100 3300
+Connection ~ 6100 3500
+Connection ~ 6800 3500
+Connection ~ 6300 900
+Connection ~ 1400 2400
+Connection ~ 1700 2700
+Connection ~ 700 2700
+Connection ~ 1400 2700
+Connection ~ 700 2300
+Connection ~ 3100 2300
+Connection ~ 2300 2700
+Connection ~ 2500 2300
+Connection ~ 2500 2700
+Connection ~ 3100 1900
+Connection ~ 2500 1900
+Connection ~ 2100 1600
+Connection ~ 2500 1600
+Connection ~ 1700 1600
+Connection ~ 1300 1600
+Connection ~ 1400 1800
+Connection ~ 1400 1600
+Connection ~ 900 1600
+Connection ~ 700 1900
+Connection ~ 6300 500
+Connection ~ 6900 900
+Connection ~ 6900 1300
+Connection ~ 6300 1300
+Connection ~ 6200 1600
+Connection ~ 6000 1600
+Connection ~ 6300 1600
+$EndSCHEMATC
